@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="731.0" prefWidth="1152.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adfitness.ui.UsreinterfaceController">
+   <children>
+      <Separator layoutX="777.0" layoutY="288.0" prefHeight="5.0" prefWidth="191.0" />
+      <Separator layoutX="183.0" layoutY="502.0" prefHeight="5.0" prefWidth="229.0" />
+      <Hyperlink fx:id="store" layoutX="168.0" layoutY="115.0" onAction="#store_signal" prefHeight="180.0" prefWidth="240.0">
+         <graphic>
+            <ImageView fitHeight="176.0" fitWidth="239.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/59fc592e93aeddf3102a0e8e50d24cb4.jpeg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink fx:id="sabri" layoutX="767.0" layoutY="115.0" onAction="#sabri_signal" prefHeight="166.0" prefWidth="229.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/ww.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink fx:id="hinata" layoutX="176.0" layoutY="519.0" onAction="#hinata_signal" prefHeight="166.0" prefWidth="243.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="234.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/home-gym-equipment-store-in-the-bay-area.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink fx:id="amine" layoutX="765.0" layoutY="303.0" onAction="#amine_signal" prefHeight="162.0" prefWidth="191.0">
+         <graphic>
+            <ImageView fitHeight="150.0" fitWidth="208.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/240_F_31527293_jtaur5yG41gg5Pb627vRwCjNPWRMPfOz.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink fx:id="takwa" layoutX="171.0" layoutY="319.0" onAction="#takwa_signal" prefHeight="166.0" prefWidth="229.0">
+         <graphic>
+            <ImageView fitHeight="159.0" fitWidth="233.0" onDragDetected="#takwa_signal" pickOnBounds="true">
+               <image>
+                  <Image url="@image/stock-vector-people-s-icons-group-in-joyful-activity-dance-gym-fitness-307595741.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Hyperlink fx:id="firas" layoutX="762.0" layoutY="519.0" onAction="#firas_signal" prefHeight="137.0" prefWidth="207.0">
+         <graphic>
+            <ImageView fitHeight="145.0" fitWidth="207.0" pickOnBounds="true">
+               <image>
+                  <Image url="@image/fitness-logos-collection_1198-28-900x0.jpg" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Hyperlink>
+      <Separator layoutX="767.0" layoutY="484.0" prefHeight="5.0" prefWidth="207.0" />
+      <Separator layoutX="183.0" layoutY="303.0" prefHeight="5.0" prefWidth="229.0" />
+      <JFXButton fx:id="deco" buttonType="RAISED" layoutX="510.0" layoutY="676.0" onAction="#deco_signal" prefHeight="41.0" prefWidth="191.0" ripplerFill="#ee8300" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="Déconnexion" />
+      <Label fx:id="welcome" alignment="CENTER" layoutX="412.0" layoutY="43.0" prefHeight="21.0" prefWidth="366.0" style="-fx-font-weight: bold; -fx-font-size: 18;" textFill="#e40e0e" />
+   </children>
+</AnchorPane>

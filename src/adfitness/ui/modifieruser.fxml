@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="803.0" prefWidth="980.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adfitness.ui.ModifieruserController">
+   <children>
+      <TableView fx:id="tab" layoutX="14.0" layoutY="121.0" prefHeight="583.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="fullname" prefWidth="75.0" text="fullname" />
+          <TableColumn fx:id="email" prefWidth="75.0" text="email" />
+            <TableColumn fx:id="phone" prefWidth="75.0" text="phone" />
+            <TableColumn fx:id="sexe" prefWidth="75.0" text="sexe" />
+            <TableColumn fx:id="role" prefWidth="75.0" text="role" />
+            <TableColumn fx:id="specialite" prefWidth="75.0" text="specialité" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="tffullname" layoutX="613.0" layoutY="149.0" />
+      <JFXTextField fx:id="tfemail" editable="false" layoutX="613.0" layoutY="220.0" />
+      <JFXTextField fx:id="tfphone" layoutX="613.0" layoutY="299.0" />
+      <JFXTextField fx:id="tfsexe" layoutX="613.0" layoutY="393.0" />
+      <JFXTextField fx:id="tfrole" layoutX="613.0" layoutY="482.0" />
+      <JFXButton fx:id="confirmer" buttonType="RAISED" layoutX="613.0" layoutY="612.0" onAction="#confirmer_signal" prefHeight="31.0" prefWidth="124.0" text="confirmer" />
+      <JFXButton fx:id="valider" buttonType="RAISED" layoutX="757.0" layoutY="612.0" onAction="#valider_signal" prefHeight="31.0" prefWidth="124.0" text="valider" />
+      <JFXTextField fx:id="tfspecialite" layoutX="613.0" layoutY="556.0" />
+   </children>
+</AnchorPane>

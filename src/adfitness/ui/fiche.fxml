@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="658.0" prefWidth="1004.0" style="-fx-background-color: silver;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adfitness.ui.FicheController">
+   <children>
+      <JFXCheckBox fx:id="diabete" layoutX="112.0" layoutY="223.0" style="-fx-font-color: black;" text="diabète" />
+      <JFXCheckBox fx:id="hypo" layoutX="112.0" layoutY="279.0" prefHeight="21.0" prefWidth="130.0" text="Hypoglécimie" />
+      <Line endX="769.0" layoutX="174.0" layoutY="81.0" startX="-81.0" />
+      <Line endX="612.0" endY="0.5" layoutX="332.0" layoutY="538.0" startX="-239.0" startY="0.5" />
+      <Line endX="111.5" endY="-211.5" layoutX="832.0" layoutY="292.0" startX="111.5" startY="246.0" />
+      <Line endX="-63.5" endY="-213.0" layoutX="156.0" layoutY="294.0" startX="-63.5" startY="244.0" />
+      <Label layoutX="103.0" layoutY="153.0" prefHeight="21.0" prefWidth="109.0" style="-fx-font-weight: bold;" text="Nom du client :" />
+      <Label alignment="CENTER" layoutX="379.0" layoutY="91.0" prefHeight="38.0" prefWidth="225.0" text="Fiche medicale">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Label layoutX="589.0" layoutY="153.0" prefHeight="21.0" prefWidth="152.0" style="-fx-font-weight: bold;" text="Date de naissance :" />
+      <DatePicker fx:id="tfdate" editable="false" layoutX="741.0" layoutY="148.0" prefWidth="162.0" />
+      <JFXTextField fx:id="tfnom" editable="false" layoutX="226.0" layoutY="148.0" prefHeight="31.0" prefWidth="286.0" />
+      <JFXCheckBox fx:id="hyper" layoutX="112.0" layoutY="332.0" text="Hypertension artérielle" />
+      <JFXCheckBox fx:id="perte" layoutX="112.0" layoutY="381.0" text="Perte de connaissance" />
+      <JFXCheckBox fx:id="saignement" layoutX="112.0" layoutY="437.0" text="Saignement de nez" />
+      <Line endX="-1.0" endY="269.0" layoutX="381.0" layoutY="222.0" startX="-1.0" startY="-7.0" />
+      <Label layoutX="467.0" layoutY="212.0" prefHeight="21.0" prefWidth="174.0" text="Autre information :" />
+      <JFXCheckBox fx:id="fumeur" layoutX="473.0" layoutY="255.0" text="Fumeur" />
+      <JFXCheckBox fx:id="pratiquant" layoutX="473.0" layoutY="289.0" text="Pratiquant du sport" />
+      <Label layoutX="474.0" layoutY="332.0" prefHeight="21.0" prefWidth="286.0" text="Pourquoi vous nous rejoignez :" />
+      <JFXCheckBox fx:id="poids" layoutX="473.0" layoutY="371.0" text="Perdre du poids" />
+      <JFXCheckBox fx:id="strength" layoutX="473.0" layoutY="402.0" text="Prise de puissance musculaire" />
+      <JFXButton fx:id="validerfiche" buttonType="RAISED" layoutX="357.0" layoutY="585.0" onAction="#validerfiche_signal" prefHeight="31.0" prefWidth="194.0" ripplerFill="#ee0e0e" text="Valider" textAlignment="CENTER">
+         <font>
+            <Font size="16.0" />
+         </font></JFXButton>
+      <Label fx:id="controle" contentDisplay="CENTER" layoutX="300.0" layoutY="558.0" prefHeight="21.0" prefWidth="308.0" style="-fx-font-weight: bold;" textFill="RED" />
+   </children>
+</AnchorPane>

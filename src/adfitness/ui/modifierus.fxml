@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="modifier_user" prefHeight="731.0" prefWidth="1249.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adfitness.ui.ModifierusController">
+   <children>
+      <AnchorPane prefHeight="732.0" prefWidth="355.0" style="-fx-background-color: #010101;">
+         <children>
+            <JFXTextField fx:id="tffullname" layoutX="9.0" layoutY="110.0" promptText="fullname" style="-fx-text-fill: #FFFFFF;" unFocusColor="#beaf89" />
+            <JFXTextField fx:id="tfphone" layoutY="206.0" promptText="phone" style="-fx-text-fill: #FFFFFF;" unFocusColor="#beaf89" />
+            <JFXTextField fx:id="tfspecialite" layoutY="293.0" prefHeight="31.0" prefWidth="169.0" promptText="specialite" style="-fx-text-fill: #FFFFFF;" unFocusColor="#efc993" />
+            <JFXTextField fx:id="tfemail" layoutY="159.0" promptText="email" style="-fx-text-fill: #FFFFFF;" unFocusColor="#bea986" />
+            <JFXButton fx:id="sav" layoutX="14.0" layoutY="474.0" onAction="#sav_signal" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #C8AA56; -fx-border-radius: 5cm; -fx-background-radius: 5cm;" text="SAVE" />
+            <JFXButton fx:id="updat" layoutX="123.0" layoutY="474.0" onAction="#updat_signal" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="UPDATE" />
+            <Label fx:id="controle" layoutX="9.0" layoutY="396.0" prefHeight="31.0" prefWidth="333.0" style="-fx-text-color: red; -fx-font-weight: bold;" textFill="RED" />
+            <ImageView fitHeight="121.0" fitWidth="152.0" layoutY="4.0" opacity="0.56" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image/adfitneess.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="77.0" layoutY="4.0" text="      Welcome back  " textFill="#fffafa">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="delet" layoutX="235.0" layoutY="474.0" onAction="#delet_signal" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="DELETE" />
+            <JFXButton fx:id="clear" layoutX="235.0" layoutY="126.0" onAction="#clear_signal" prefHeight="31.0" prefWidth="103.0" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="CLEAR" />
+            <JFXComboBox fx:id="cbrole" layoutX="2.0" layoutY="249.0" prefHeight="31.0" prefWidth="169.0" styleClass="combo-box1" stylesheets="@image/d.css" unFocusColor="#beaf89" />
+            <JFXComboBox fx:id="cbsexe" layoutY="332.0" prefHeight="31.0" prefWidth="169.0" styleClass="combo-box" stylesheets="@image/d.css" unFocusColor="#beaf89" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="732.0" fitWidth="896.0" layoutX="354.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@image/salle.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="tab" layoutX="355.0" prefHeight="430.0" prefWidth="896.0">
+         <columns>
+            <TableColumn fx:id="fullname" prefWidth="116.0" text="fullname" />
+            <TableColumn fx:id="email" minWidth="1.0" prefWidth="214.0" text="email" />
+            <TableColumn fx:id="phone" prefWidth="99.0" text="phone" />
+            <TableColumn fx:id="role" prefWidth="116.0" text="role" />
+            <TableColumn fx:id="specialite" prefWidth="97.0" text="specialite" />
+            <TableColumn fx:id="sexe" prefWidth="93.0" text="genre" />
+            <TableColumn fx:id="datead" prefWidth="157.0" text="date adhésion" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="edit" layoutX="433.0" layoutY="474.0" onAction="#edit_signal" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="EDIT" />
+      <JFXButton fx:id="refresh" layoutX="1046.0" layoutY="474.0" onAction="#refresh_signal" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #C8AA56; -fx-background-radius: 5cm;" text="REFRESH LIST" />
+      <JFXButton fx:id="fiche_medicale" buttonType="RAISED" layoutX="740.0" layoutY="474.0" onAction="#fiche_medicale_signal" prefHeight="31.0" prefWidth="142.0" style="-fx-background-radius: 5cm; -fx-background-color: #C8AA56;" text="FICHE MEDICALE" />
+      <JFXButton fx:id="retour" buttonType="RAISED" layoutX="1046.0" layoutY="668.0" onAction="#retour_signal" prefHeight="31.0" prefWidth="133.0" style="-fx-background-color: #C8AA56;" text="RETOUR" />
+      <JFXButton fx:id="presence" buttonType="RAISED" layoutX="395.0" layoutY="668.0" onAction="#presence_signal" prefHeight="31.0" prefWidth="154.0" style="-fx-background-color: #C8AA56;" text="fiche de présence" />
+   </children>
+</AnchorPane>
